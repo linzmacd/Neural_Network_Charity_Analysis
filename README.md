@@ -18,7 +18,11 @@ The purpose of this analysis was to design a neural network that creates a binar
 
 While I tested many different combinations of numbers of layers, neurons, and activation functions, the neural network in the optimization ipynb file in this repository has 4 layers with 10, 7, 5, and 3 neurons (respectively). It uses the relu activation function for the hidden layers and sigmoid activation function for the output layer.
 
-Unfortunately, I was unable to achieve the 75% target model performance - most models I ran performed at about 72-73%.
+![Resources/model.PNG](Resources/model.PNG)
+
+Unfortunately, this model falls short of achieving the 75% target model performance.
+
+![Resources/results.PNG](Resources/results.PNG)
 
 In attempts to increase model performance, I tried the following:
 - Added 2 additional layers and tried different combinations of neuron numbers on each layer
@@ -30,4 +34,4 @@ In attempts to increase model performance, I tried the following:
 
 ## Summary
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+Most the models I ran performed at about 72-73% accuracy and did not achieve the 75% target. Moving forward, I would reccommend trying a Random Forest model and looking at the feature importance rankings, then possibly revisiting the preprocessing step and modifying which factors to include in the model.
